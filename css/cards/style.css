@@ -22,7 +22,7 @@ body {
     gap: 1em;
     flex-direction: column;
     color: #fff;
-    font: .9rem 'Montserrat', san-serif;
+    font: .9rem 'Montserrat', sans-serif;
 }
 .card-wrapper {
     height: 50%;
@@ -45,14 +45,14 @@ body {
     border-radius: 5px;
     border: 1px dashed #fff;
     transition: all 0.3s ease-out;
-    transform-origin: left;
 
-    /* alternating background colors */
     &:nth-child(even) {
         background-color: #0a121bb8;
+        transform-origin: right;
     }
     &:nth-child(odd) {
         background-color: #0a0a0a;
+        transform-origin: left;
     }
 }
 .card:hover {
