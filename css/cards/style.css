@@ -1,0 +1,61 @@
+/* Maxwell Easter : March 10, 2025 */
+
+/* basic reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: #141414;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+/* --- card container --- */
+.card-container {
+    height: 100%;
+    gap: 1em;
+    flex-direction: column;
+    color: #fff;
+    font: .9rem 'Montserrat', san-serif;
+}
+.card-wrapper {
+    height: 50%;
+    text-align: center;
+    gap: .5em;
+}
+
+.card-wrapper,
+.card-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 4%;
+    height: 90%;
+    padding: 1em;
+    border-radius: 5px;
+    border: 1px dashed #fff;
+    transition: all 0.3s ease-out;
+    transform-origin: left;
+
+    /* alternating background colors */
+    &:nth-child(even) {
+        background-color: #0a121bb8;
+    }
+    &:nth-child(odd) {
+        background-color: #0a0a0a;
+    }
+}
+.card:hover {
+    width: 20%;
+}
+/* --- end card-container --- */
