@@ -1,0 +1,42 @@
+
+<!-- Maxwell Easter : March 12, 2025 -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title> Chess Board </title>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="chessboard" id="chessboard">
+
+        </div>
+        <script>
+            /* get the chessboard */
+            const board = document.getElementById("chessboard");
+
+            for (let row = 0; row < 8; row++) {
+                for (let col = 0; col < 8; col++) {
+                    /* create the squares for the board */
+                    let square = document.createElement("div");
+                    square.classList.add("square");
+
+                    /* create chessboard color pattern */
+                    if ((row + col) % 2 === 0) {
+                        square.classList.add("white");
+                    } 
+                    else {
+                        square.classList.add("black");
+                    }
+
+                    board.appendChild(square);
+                }
+            }
+        </script>
+    </body>
+</html>
