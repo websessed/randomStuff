@@ -1,0 +1,81 @@
+
+/* Maxwell Easter : March 12, 2025 */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    background-color: #141414;
+    overflow: hidden;
+    height: 100vh;
+}
+
+
+/* --- holygrail --- */
+.holygrail {
+    height: 100%;
+    color: #fff;
+    font: .9rem 'Montserrat', sans-serif;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 10% auto 10%;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 20% auto;
+}
+.content-box {
+    display: grid;
+}
+
+.top-section {
+    display: flex;
+
+    & .top-left-content,
+    & .top-right-content {
+        width: 30%;
+    }
+    & .center-content {
+        width: 40%;
+    }
+}
+.bottom-section {
+    display: flex;
+    flex-wrap: wrap;
+    
+    & .middle-content {
+        width: 100%;
+    }
+    & .bottom-content {
+        width: 100%;
+    }
+}
+
+nav, 
+footer,
+.navbar, 
+.top-left-content, 
+.center-content,
+.top-right-content,
+.middle-content,
+.bottom-content{
+    border: 1px dashed #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.holygrail, 
+main, 
+.content-box, 
+.top-section, 
+.bottom-section
+{
+    gap: .5em;
+}
+
