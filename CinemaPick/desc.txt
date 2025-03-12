@@ -1,0 +1,7 @@
+
+Description: 
+   - add an input field 
+   - return movies based on user mood 
+   - throw an errow for unrecognized mood 
+   - use IMDB API for recommendation
+   - movie thumbnail, description & title 

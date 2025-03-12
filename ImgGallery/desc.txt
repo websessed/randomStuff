@@ -1,0 +1,7 @@
+
+Description: 
+    - build an Img grid 
+    - add a lightbox (prev, next, close, ImgTitle, zoom)
+    - make it responsive
+    - use an API to grab images per ImgBox
+    - lazy load for performance 
