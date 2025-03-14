@@ -5,7 +5,6 @@
  │   │   ├── 📜 JS, Axios/  
  │   ├── 📂 Projects/  
  │   │   ├── 🎬 CinemaPick/  
- │   │   ├── 🎮 Intervue/  
  │   │   └── 🎦 ImgGallery/  
  |
  + Freelance & OSS

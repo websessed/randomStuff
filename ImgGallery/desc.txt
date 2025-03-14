@@ -5,3 +5,11 @@ Description:
     - make it responsive
     - use an API to grab images per ImgBox
     - lazy load for performance 
+    - add infinite scroll 
+
+Useful Topics: 
+    Variables, functions, objects, arrays 
+    DOM Manipulation
+    Events 
+    API fetching
+    Intersection Observer API

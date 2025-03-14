@@ -5,3 +5,11 @@ Description:
    - throw an errow for unrecognized mood 
    - use IMDB API for recommendation
    - movie thumbnail, description & title 
+
+Useful Topics: 
+   Forms and Input fields 
+   DOM Manipulation
+   Events 
+   String Manipulation
+   Variables, Objects, Functions & Arrays
+   API and Error Handling
