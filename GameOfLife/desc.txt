@@ -4,10 +4,11 @@ Description:
     - implement the rule of the game 
     - calculate generation, population
     - game buttons (play, pause)
-    - add a background audio
     - implement colors for dead(red) and live(green) cells
     - manual cell creation 
-    - add a game guide page
+    - add a game guide pop-up
+
+    - add a background audio
 
 Rules of the Game: 
     1️⃣ Underpopulation: A live cell with fewer than 2 live neighbors dies (loneliness)

@@ -19,7 +19,7 @@
  |
  ├── 📆 Month 5-6(A, S)/   
  │   ├── 🛠️ Tools/  
- │   │   ├── 🏗️ Vue, Nuxt, Gsap/  
+ │   │   ├── 🏗️ Vue, Nuxt, Pinia, Gsap/  
  │   ├── 📂 Projects/  
  │   │   ├── 🚀 Portfolio/  
  │   │   ├── 📑 Blog/  
