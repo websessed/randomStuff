@@ -1,5 +1,5 @@
 
-/* total students */
+/* student info */
 let students = [
     {name: 'Ben', grade: 50, passed: false},
     {name: 'Max', grade: 60, passed: true},
