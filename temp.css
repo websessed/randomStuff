@@ -1,4 +1,6 @@
 
+
+
 /* reset */
 * {
     box-sizing: border-box;
@@ -17,12 +19,12 @@ body {
 }
 
 
-::-webkit-scrollbar {
-    width: 8px;
-}
-
+/* custom scroll-bar */
 ::-webkit-scrollbar-thumb {
     background: #888;
+}
+::-webkit-scrollbar {
+    width: 8px;
 }
 
 

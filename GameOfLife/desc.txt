@@ -1,4 +1,3 @@
-
 Description: 
     - build the game board 
     - implement the rule of the game 
@@ -18,8 +17,7 @@ Rules of the Game:
 
 Useful Topics: 
     Variables, Arrays, Loops, Functions and Objects
-    DOM Manipulation
-    Event handling
+    DOM Manipulation, Event handling
     JavaScript & HMTL audio
-    Asynchronous JS & Timers
-    Jest 
+    Asynchronous JS & TimerInterval
+    Jest, Typescript
