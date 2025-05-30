@@ -12,36 +12,38 @@ const rl = readline.createInterface({
 });
 
 function playRockPaperScissors() {
-    const choices = [
-        'rock',
-        'paper',
-        'scissors'
-    ];
+    const choices = {
+        rock: 'scissors', 
+        paper: 'rock',
+        scissors: 'paper'
+    }; /* game rules */
+
     /* computer makes a choice */
-    const computer = choices[Math.floor(Math.random() * 3)];
+    const choiceKeys = Object.keys(choices); // ["rock", "paper", "scissors"]
+    const computer = choiceKeys[Math.floor(Math.random() * choiceKeys.length)];
+
 
     rl.question("rock, paper, scissors?: ", (userInput) => {
         /* make sure the user input is in lowercase */
         const user = userInput.toLowerCase().trim(); 
 
-        console.log(`You chose ${user}`);
-        console.log(`Computer chose: ${computer}`);
-
-        if (!choices.includes(user)) {
-            console.log("Invalid choice / user input");
+        if (!choiceKeys.includes(user)) {
+            console.log("🚫 Invalid choice");
             
             rl.close(); return;
         }
+
+        console.log(`You chose ${user}`);
+        console.log(`Computer chose: ${computer}`);
 
         if (user === computer) {
             console.log("🤝 It's a tie!")
         }
 
-        else if (user === "rock" && computer === "scissors" || user === "scissors" && 
-                 computer === "paper" || user === "paper" && computer === "rock") 
-        {
-            console.log("🎉You Win!")
+        else if (choices[user] === computer) {
+            console.log("🎉 You win!")
         }
+
         else {
             console.log("💻 Computer wins!");
         }
