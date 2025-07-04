@@ -1,9 +1,0 @@
-
-sites redesigned {
-    facebook, 
-    quora,
-    Instagram,
-    reddit,
-    Pinterest,
-    YT Music
-}
