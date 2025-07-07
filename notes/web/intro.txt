@@ -1,0 +1,165 @@
+
+Networking / Network 
+    Refers to the communication between a client (browser) and a server over the internet or a local network.
+    Networking is used when a site: 
+
+    * Fetches data from an April
+    * Loads images, fonts or videos 
+    * Sends form submissions
+    * Authenticate users 
+
+--
+
+Client-Server Model 
+    This is the foundation of how the web works.
+
+    * Client: usually the browser
+    * Server: A remote machine (like an API server) that processes requests and sends back responses.
+
+-- 
+
+HTTP - HyperText Transfer Protocol 
+    The protocol used by browsers to communicate with servers.
+
+    HTTP Request Structure:
+    when your browser sends a request, it includes a: 
+    
+    * Method: what you want to do (GET, POST, PUT, DELETE)
+    * URL: where to go (https://api.example.com/users)
+    * Headers: extra info like (Authorization: bearer token)
+    * Body: Data being sent (for POST/PUT)
+
+    GET retrieves data, POST sends new data, PUT updates existing data, DELETE removes data 
+
+    HTTP Responses
+    when the server replies, it sends: 
+
+    * Status code (e.g 200 OK, 404 Not Found, 500 Server Error)
+    * Headers
+    * Body (usually JSON, HTML or plain text) 
+
+    Status codes:
+    200     OK                      Successful request
+    201     Created                 Resource was created 
+    400     Bad Request             Invalid input
+    401     Unauthorized            User not logged in 
+    403     Forbidden               Not allowed 
+    404     Not Found               Resource doesn't exist 
+    505     Internal Server Err     Server had a problem 
+
+--
+
+DNS - Domain Name System 
+    when you visit site like www.google.com, your computer needs to find its IP address (like 141.250.68.46), so 
+    instead of trying to memorize long IP addresses, DNS translates such IP addresses to a Domain Name.
+    DNS acts like the internet's phonebook: 
+
+    * google.com ➡️ DNS ➡️ 142.250.68.46
+
+--
+
+URL -> Universal Resource Locator 
+    http://example.com/product/electric/phone 
+    |           |             |           |
+   scheme     domain         path      resource 
+
+
+-- 
+
+HTTP vs HTTPS 
+    * HTTP: Data is plain text - not secure
+    * HTTPS: Secure version - data is encrypted using TLS / SSL 
+
+    HTTPS is essential for: 
+    * protecting user data (e.g password)
+    * SEO ranking 
+    * using browsers APIs that require secure origins (e.g geolocation)
+
+-- 
+
+Ports 
+    Ports are like doors on a computer that different services use. 
+    
+    * Port 80 - default HTTP Port 
+    * Port 443 - default HTTPS Port 
+
+
+
+🧠 Recap 
+
+Concept               Summary
+HTTP / HTTPS          Protocol for web communication 
+DNS                   Translates domain names to IP addresses 
+IP Address            Numerical address of a device 
+Client-Server         Request-response communication model 
+Methods               Define action (GET, POST, PUT, DELETE)
+Status Codes          Servers response about the request result 
+
+
+
+Broswer Life Cycle
+    What happens when you type a URL into your browser?
+
+    When you type a URL (like https://openai.com) into your browser and press Enter, a series of layered steps 
+    happen behind the scenes to fetch and display the website.
+
+* URL Parsing 
+  The browser splits the URL into parts:
+  -Protocol: https 
+  -Domain: openai.com 
+  -Path(if any): like /blog 
+  -Query parameters(optional): like ?q=search 
+
+
+* DNS Lookup 
+  Your browser needs to find the IP address of openai.com, so it asks the Domain Name System:
+  -if it's cached(in your OS or browser), it uses that 
+  -if not, it asks a DNS server(e.g 8.8.8.8) 
+  -DNS responds with the IP address(e.g 104.20.22.46) 
+
+* TCP/IP Connection 
+  using the IP address, your browser opens a TCP connection to the server 
+  (on port 443 for HTTPS)
+
+
+* TLS Handshake (if HTTPS)
+  because you're using https, the browser and server do a TLS handshake to:
+  -establish encryption 
+  -exchange certificates 
+  -set up a secure connection 
+
+
+* HTTP Request sent 
+  Now the browser sends a GET request to the server, like: 
+
+  GET / HTTP/1.1
+  Host: openai.com 
+  User-agent: chrome/...
+
+
+* Server Processes Request 
+  The server: 
+  -receives the request 
+  -processes it (e.g check routes, loads files) 
+  -sends back a response (usually an HTML file)
+
+
+* Browser receives response 
+  The browser gets the response: 
+
+  HTTP/1.1 200 0K 
+  Content-type: text/html (followed by the html content)
+
+
+* Rendering the page 
+  The browser: 
+  -parses the HTML 
+  -requests linked resources (CSS, JS, fonts, images and so on) 
+  -applies CSS to style it 
+  -executes Javascript 
+  -builds the DOM and render Tree 
+  -finally displays the page on your screen 
+
+
+* Additional requests 
+  while rendering, if the page needs more data (e.g, via AJAX), more requests are sent in the bg
