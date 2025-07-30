@@ -1,0 +1,19 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# Node modules (future-proof)
+node_modules/
+
+# Editor junk
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files (just in case)
+.env
