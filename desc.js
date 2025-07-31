@@ -9,6 +9,6 @@ core features:
     -media nav (next/prev btn, toggleable thumbnails)
     -media title + description
     -animations(fade-in/out, zoom-in/out, slide transtions)
-    -deep linking 
+    -deep linking (using hash api)
 
 */
