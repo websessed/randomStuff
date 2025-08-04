@@ -5,7 +5,7 @@ Thumbs.db
 # Node modules (future-proof)
 node_modules/
 
-# Editor junk
+# Editor junk (vscode)
 .vscode/
 .idea/
 
